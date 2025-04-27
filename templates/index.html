@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #f0f0f0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .type {
+            font-size: 30px;
+            color: #862b2b;
+        }
+        .setup, .punchline {
+            font-size: 42px;
+            margin: 20px 0;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="type">{{ joke.type }}</div>
+        <div class="setup">{{ joke.setup }}</div>
+        <div class="punchline">{{ joke.punchline }}</div>
+    </div>
+</body>
+</html>
